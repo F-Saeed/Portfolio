@@ -1,0 +1,61 @@
+:local(.pictureTag) {
+  animation: slideInAndOvershoot 1.75s ease-out 0s 1;
+  position: absolute;
+  z-index: 3;
+  bottom: 690px;
+  margin-bottom: -600px;
+  right: -35px;
+  width: 610px;
+}
+
+@keyframes slideInAndOvershoot {
+  0% {
+    opacity: 0.2;
+    transform: translateX(100%);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateX(-5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  .pictureTag {
+    bottom: 715px;
+    right: -20px;
+    margin-bottom: -600px;
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 419px) {
+  .pictureTag {
+    bottom: 685px;
+    right: -20px;
+    margin-bottom: -600px;
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 570px) {
+  .pictureTag {
+    bottom: 650px;
+    right: -20px;
+    margin-bottom: -600px;
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 571px) and (max-width: 635px) {
+  .pictureTag {
+    bottom: 620px;
+    margin-bottom: -600px;
+    width: 100vw;
+  }
+}
