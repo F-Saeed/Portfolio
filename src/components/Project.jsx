@@ -1,4 +1,6 @@
+import Loader from 'react-loader-spinner';
 import * as S from './styles/Project.style';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Project = (props) => {
   const { name, image, altImage, websiteLink, descriptionLink, position } =
@@ -6,7 +8,14 @@ const Project = (props) => {
 
   return (
     <S.StyledProject position={position}>
-        <img className='app-image' src={image} alt={altImage} />
+      <LazyLoadImage
+        effect='blur'
+        src={image}
+        alt={altImage}
+        placeholder={
+          <Loader type='TailSpin' color='#00BFFF' height={10} width={10} />
+        }
+      />
       <S.ProjectCaption>
         <h2>{name}</h2>
         <S.ProjectLink href={descriptionLink} target='_blank'>

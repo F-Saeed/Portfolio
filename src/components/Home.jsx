@@ -3,8 +3,9 @@ import * as S from './styles/Home.style';
 import { ReactComponent as Ellipse } from './images/ellipse.svg';
 import { EnvelopeFill as Envelope } from '@styled-icons/bootstrap/EnvelopeFill';
 import pictureStyles from './styles/PictureTag.module.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Loader from 'react-loader-spinner';
 import Picture from './images/profilepic.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Home = () => {
   return (
@@ -31,6 +32,9 @@ const Home = () => {
             alt='Profile'
             className={pictureStyles.pictureTag}
             effect='blur'
+            placeholder={
+              <Loader type='TailSpin' color='#00BFFF' height={40} width={40} />
+            }
             src={Picture}
           />
         </S.PictureDiv>
