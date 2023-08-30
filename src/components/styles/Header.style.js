@@ -1,5 +1,5 @@
-import styled, { css, keyframes } from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { css, keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
 const HiddenThenShow = keyframes`
   0% {
@@ -12,7 +12,7 @@ const HiddenThenShow = keyframes`
 
 const hideAndShow = css`
   @media only screen and (min-width: 320px) and (max-width: 1024px) {
-    display: ${({ menustate }) => (menustate ? 'flex' : 'none')};
+    display: ${({ menustate }) => (menustate ? "flex" : "none")};
   }
 `;
 
@@ -31,14 +31,14 @@ export const Navbar = styled.nav`
 
   @media only screen and (min-width: 320px) and (max-width: 1024px) {
     animation: 0.75s ease-out ${HiddenThenShow};
-    height: ${({ menustate }) => (menustate ? '425px' : '100px')};
-    padding-bottom: ${({ menustate }) => (menustate ? '30px' : 'none')};
+    height: ${({ menustate }) => (menustate ? "425px" : "100px")};
+    padding-bottom: ${({ menustate }) => (menustate ? "30px" : "none")};
   }
 `;
 
 export const NavItems = styled.div`
   background-color: #f9f9fc;
-  font-family: 'Poppins Regular';
+  font-family: "Poppins Regular", monospace;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,14 +52,14 @@ export const NavItems = styled.div`
 
     > div {
       display: flex;
-      align-self: ${({ menustate }) => (menustate ? 'flex-end' : 'none')};
+      align-self: ${({ menustate }) => (menustate ? "flex-end" : "none")};
     }
   }
 `;
 
 export const NavLogoTitle = styled(Link)`
   color: #dc2460;
-  font-family: 'Poppins SemiBold';
+  font-family: "Poppins SemiBold", monospace;
   font-size: 1.25rem;
   text-decoration: none;
 
@@ -107,7 +107,7 @@ export const NavButton = styled.a`
   border-radius: 30px;
   color: #fff;
   display: flex;
-  font-family: 'Poppins Medium';
+  font-family: "Poppins Medium", monospace;
   padding: 10px 20px;
   text-decoration: none;
 

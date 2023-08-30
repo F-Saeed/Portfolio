@@ -1,17 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   slideInFromLeft,
   slideInFromCenter,
   slideInFromRight,
-} from './keyFrames';
+} from "./keyFrames";
 
 // Skills
 const StyledSkill = styled.figure`
   animation: 1.5s ease-out 0s 1
     ${(props) =>
-      props.position === 'center'
+      props.position === "center"
         ? slideInFromCenter
-        : props.position === 'left'
+        : props.position === "left"
         ? slideInFromLeft
         : slideInFromRight};
   border-radius: 20px;
@@ -30,7 +30,7 @@ const StyledSkill = styled.figure`
   }
 
   > h3 {
-    font-family: 'Poppins Medium';
+    font-family: "Poppins Medium", monospace;
     font-size: 30px;
   }
 

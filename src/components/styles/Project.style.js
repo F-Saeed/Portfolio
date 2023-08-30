@@ -61,7 +61,7 @@ export const ProjectCaption = styled.figcaption`
 
   > h2 {
     color: rgb(220, 218, 215);
-    font-family: "Poppins SemiBold";
+    font-family: "Poppins SemiBold", monospace;
     padding: 35px 0 15px 0;
   }
 
@@ -78,7 +78,7 @@ export const ProjectLink = styled.a`
   color: rgb(220, 218, 215);
   cursor: pointer;
   display: block;
-  font-family: "Poppins Medium";
+  font-family: "Poppins Medium", monospace;
   font-size: 16px;
   margin: 0 110px 20px 110px;
   padding: 0.5rem 1.2rem;

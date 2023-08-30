@@ -30,7 +30,7 @@ export const AboutSection = styled.section`
 `;
 
 export const AboutHeading = styled.h2`
-  font-family: "Poppins SemiBold";
+  font-family: "Poppins SemiBold", monospace;
   font-size: 44px;
   margin-bottom: 80px;
   text-align: center;
@@ -42,7 +42,7 @@ export const AboutHeading = styled.h2`
 
 export const Intro = styled.div`
   display: grid;
-  font-family: "Poppins Bold";
+  font-family: "Poppins Bold", monospace;
   font-size: 70px;
   text-align: center;
 
@@ -85,7 +85,7 @@ export const SmallRectangle = styled.div`
 
 export const IntroTagline = styled.p`
   animation: 3s ease-out 0s 1 ${TitleTransition};
-  font-family: "Poppins Regular";
+  font-family: "Poppins Regular", monospace;
   font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0.2rem;
@@ -96,7 +96,7 @@ export const ContactDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins Medium";
+  font-family: "Poppins Medium", monospace;
   font-size: 12px;
   height: 150px;
 `;

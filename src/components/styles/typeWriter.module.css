@@ -1,6 +1,6 @@
 .introTagline {
   animation: 3s ease-out 0s 1 TitleTransition;
-  font-family: "Poppins Regular";
+  font-family: "Poppins Regular", monospace;
   font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0.2rem;
@@ -22,7 +22,7 @@
 }
 
 .aboutContent {
-  font-family: "Kalam";
+  font-family: "Kalam", monospace;
   font-size: 35px;
   margin: auto;
   max-width: 1200px;
@@ -33,5 +33,17 @@
 @media screen and (max-width: 1200px) {
   .aboutContent {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutContent {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContent {
+    font-size: 20px;
   }
 }

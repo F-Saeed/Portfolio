@@ -27,7 +27,7 @@ export const Section = styled.section`
 
 export const Heading = styled.h1`
   animation: 1.5s ease-out 0s 1 ${SlideInFromTop};
-  font-family: "Poppins SemiBold";
+  font-family: "Poppins SemiBold", monospace;
   font-size: 44px;
   line-height: 66px;
   margin-bottom: 123px;
@@ -44,7 +44,7 @@ export const Heading = styled.h1`
 
 /* export const TitleTagline = styled.p`
   color: rgba(18, 18, 18, 0.7);
-  font-family: 'Poppins Regular';
+  font-family: 'Poppins Regular', monospace;
   font-size: 16px;
   line-height: 24px;
   text-align: center;

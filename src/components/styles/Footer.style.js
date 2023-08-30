@@ -48,7 +48,7 @@ export const FooterLogoDiv = styled.div`
 
 export const FooterLogoTitle = styled(Link)`
   color: #fff;
-  font-family: "Poppins SemiBold";
+  font-family: "Poppins SemiBold", monospace;
   font-size: 1.25rem;
   text-decoration: none;
 `;
@@ -63,7 +63,7 @@ export const FooterLogo = styled.span`
 `;
 
 export const FooterTagline = styled.p`
-  font-family: "Poppins Regular";
+  font-family: "Poppins Regular", monospace;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -84,7 +84,7 @@ export const FooterInfo = styled.div`
   display: grid;
   grid-column: 3 / 4;
   grid-row: 1 / 3;
-  font-family: "Poppins Regular";
+  font-family: "Poppins Regular", monospace;
 
   @media only screen and (min-width: 320px) and (max-width: 570px) {
     grid-column: none;
@@ -134,7 +134,7 @@ export const SocialLink = styled.a`
 export const Copyright = styled.p`
   border-top: 1px solid #404040;
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Poppins Medium";
+  font-family: "Poppins Medium", monospace;
   font-size: 16px;
   grid-column: 1 / 4;
   grid-row: 3 / 4;

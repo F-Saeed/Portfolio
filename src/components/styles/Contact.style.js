@@ -1,14 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   slideInFromLeft,
   slideInFromCenter,
   slideInFromRight,
-} from './keyFrames';
+} from "./keyFrames";
 
 export const ContactForm = styled.form`
   color: #141c3a;
   display: grid;
-  font-family: 'Poppins Medium';
+  font-family: "Poppins Medium", monospace;
   font-size: 1.2rem;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -28,7 +28,7 @@ export const InputDiv = styled.div`
   > input {
     border: 1px solid #e6ecf8;
     border-radius: 10px;
-    font-family: 'Poppins Regular';
+    font-family: "Poppins Regular", monospace;
     font-size: 1rem;
     margin: 0 30px;
     padding: 20px;
@@ -60,7 +60,7 @@ export const EmailInputDiv = styled(InputDiv)`
 export const TextAreaDiv = styled.div`
   animation: 1.5s ease-out 0s 1 ${slideInFromCenter};
   border-radius: 20px;
-  font-family: 'Poppins Regular';
+  font-family: "Poppins Regular", monospace;
   grid-column: 1 / 3;
   justify-self: center;
   height: 10rem;
