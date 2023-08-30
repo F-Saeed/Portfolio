@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
 const HiddenThenShow = keyframes`
   0% {
@@ -48,7 +48,7 @@ export const FooterLogoDiv = styled.div`
 
 export const FooterLogoTitle = styled(Link)`
   color: #fff;
-  font-family: 'Poppins SemiBold';
+  font-family: "Poppins SemiBold";
   font-size: 1.25rem;
   text-decoration: none;
 `;
@@ -63,7 +63,7 @@ export const FooterLogo = styled.span`
 `;
 
 export const FooterTagline = styled.p`
-  font-family: 'Poppins Regular';
+  font-family: "Poppins Regular";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -84,7 +84,7 @@ export const FooterInfo = styled.div`
   display: grid;
   grid-column: 3 / 4;
   grid-row: 1 / 3;
-  font-family: 'Poppins Regular';
+  font-family: "Poppins Regular";
 
   @media only screen and (min-width: 320px) and (max-width: 570px) {
     grid-column: none;
@@ -123,12 +123,18 @@ export const SocialLink = styled.a`
     height: 24px;
     width: 24px;
   }
+
+  & > svg:hover {
+    color: #0a66c2;
+    transform: scale(120%);
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
 `;
 
 export const Copyright = styled.p`
   border-top: 1px solid #404040;
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Poppins Medium';
+  font-family: "Poppins Medium";
   font-size: 16px;
   grid-column: 1 / 4;
   grid-row: 3 / 4;

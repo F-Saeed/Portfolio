@@ -1,16 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   slideInFromLeft,
   slideInFromCenter,
   slideInFromRight,
-} from './keyFrames';
+} from "./keyFrames";
 
 export const StyledProject = styled.figure`
   animation: 1.5s ease-out 0s 1
     ${(props) =>
-      props.position === 'center'
+      props.position === "center"
         ? slideInFromCenter
-        : props.position === 'left'
+        : props.position === "left"
         ? slideInFromLeft
         : slideInFromRight};
   border-radius: 1.2rem;
@@ -61,7 +61,7 @@ export const ProjectCaption = styled.figcaption`
 
   > h2 {
     color: rgb(220, 218, 215);
-    font-family: 'Poppins SemiBold';
+    font-family: "Poppins SemiBold";
     padding: 35px 0 15px 0;
   }
 
@@ -78,7 +78,7 @@ export const ProjectLink = styled.a`
   color: rgb(220, 218, 215);
   cursor: pointer;
   display: block;
-  font-family: 'Poppins Medium';
+  font-family: "Poppins Medium";
   font-size: 16px;
   margin: 0 110px 20px 110px;
   padding: 0.5rem 1.2rem;
@@ -86,6 +86,8 @@ export const ProjectLink = styled.a`
 
   &:hover {
     background-color: rgb(116, 60, 189);
+    transform: scale(115%);
+    transition: transform 0.3s linear, background-color 0.3s linear;
   }
 
   @media only screen and (min-width: 320px) and (max-width: 570px) {

@@ -16,22 +16,27 @@ body {
 
 /* Fonts */
 @font-face {
-  font-family: 'Poppins SemiBold';
-  src: url('../fonts/Poppins/Poppins-SemiBold.woff') format('truetype');
+  font-family: "Poppins SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.woff") format("truetype");
   font-style: normal;
 }
 @font-face {
-  font-family: 'Poppins Bold';
-  src: url('../fonts/Poppins/Poppins-Bold.woff') format('truetype');
+  font-family: "Poppins Bold";
+  src: url("../fonts/Poppins/Poppins-Bold.woff") format("truetype");
   font-style: normal;
 }
 @font-face {
-  font-family: 'Poppins Regular';
-  src: url('../fonts/Poppins/Poppins-Medium.woff') format('truetype');
+  font-family: "Poppins Regular";
+  src: url("../fonts/Poppins/Poppins-Medium.woff") format("truetype");
   font-style: normal;
 }
 @font-face {
-  font-family: 'Poppins Medium';
-  src: url('../fonts/Poppins/Poppins-Regular.woff') format('truetype');
+  font-family: "Poppins Medium";
+  src: url("../fonts/Poppins/Poppins-Regular.woff") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kalam";
+  src: url("../fonts/Kalam/Kalam.woff2") format("truetype");
   font-style: normal;
 }

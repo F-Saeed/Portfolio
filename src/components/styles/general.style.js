@@ -1,8 +1,10 @@
-import styled from 'styled-components';
-import { SlideInFromTop, slideInFromCenter } from './keyFrames';
+import styled from "styled-components";
+import { SlideInFromTop, slideInFromCenter } from "./keyFrames";
 
 export const MainDiv = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-bottom: 0px;
   padding-top: 100px;
@@ -25,7 +27,7 @@ export const Section = styled.section`
 
 export const Heading = styled.h1`
   animation: 1.5s ease-out 0s 1 ${SlideInFromTop};
-  font-family: 'Poppins SemiBold';
+  font-family: "Poppins SemiBold";
   font-size: 44px;
   line-height: 66px;
   margin-bottom: 123px;

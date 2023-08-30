@@ -1,17 +1,18 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './components/styles/App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Loader from 'react-loader-spinner';
-import { PageLoaderDiv } from './components/styles/loaders.style';
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./components/styles/App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Loader from "react-loader-spinner";
+import { PageLoaderDiv } from "./components/styles/loaders.style";
+import { Helmet } from "react-helmet";
 
-const Home = lazy(() => import('./components/Home'));
+const Home = lazy(() => import("./components/Home"));
 
-const Skills = lazy(() => import('./components/Skills'));
-const Projects = lazy(() => import('./components/Projects'));
-const Contact = lazy(() => import('./components/Contact'));
-const About = lazy(() => import('./components/About'));
+const Skills = lazy(() => import("./components/Skills"));
+const Projects = lazy(() => import("./components/Projects"));
+const Contact = lazy(() => import("./components/Contact"));
+const About = lazy(() => import("./components/About"));
 
 const App = () => {
   return (
@@ -19,19 +20,28 @@ const App = () => {
       <Suspense
         fallback={
           <PageLoaderDiv>
-            <Loader type='TailSpin' color='#00BFFF' height={80} width={80} />
+            <Loader type="TailSpin" color="#00BFFF" height={80} width={80} />
           </PageLoaderDiv>
         }
       >
-        <div className='App'>
+        <div className="App">
+          <Helmet>
+            <meta
+              name="image"
+              property="og:image"
+              content="https://i.imgur.com/f0r2NAx.png"
+            />
+            <meta property="og:url" content="https://f-saeed.netlify.app/" />
+            <title>Portfolio</title>
+          </Helmet>
           <Header />
           <Routes>
-            <Route exact path='/' element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             {/* <Route exact path='/Portfolio/about' component={About}/>
              */}
-            <Route exact path='/skills' element={<Skills />} />
-            <Route exact path='/projects' element={<Projects />} />
-            <Route exact path='/contact' element={<Contact />} />
+            <Route exact path="/skills" element={<Skills />} />
+            <Route exact path="/projects" element={<Projects />} />
+            <Route exact path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
         </div>

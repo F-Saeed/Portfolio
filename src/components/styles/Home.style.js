@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { AppearAndRotate, NameTransition, TitleTransition } from './keyFrames';
+import { AppearAndRotate, NameTransition, TitleTransition } from "./keyFrames";
 
 export const UserSection = styled.section`
   background-color: #f9f9fc;
@@ -15,9 +15,34 @@ export const UserSection = styled.section`
   }
 `;
 
+export const AboutSection = styled.section`
+  background-color: #f9f9fc;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 80px;
+  width: min(100vw, 1440px);
+  max-width: 100%;
+  min-height: 800px;
+
+  @media (max-width: 650px) {
+    padding: 80px 25px;
+  }
+`;
+
+export const AboutHeading = styled.h2`
+  font-family: "Poppins SemiBold";
+  font-size: 44px;
+  margin-bottom: 80px;
+  text-align: center;
+
+  @media (max-width: 650px) {
+    margin-bottom: 40px;
+  }
+`;
+
 export const Intro = styled.div`
   display: grid;
-  font-family: 'Poppins Bold';
+  font-family: "Poppins Bold";
   font-size: 70px;
   text-align: center;
 
@@ -60,7 +85,7 @@ export const SmallRectangle = styled.div`
 
 export const IntroTagline = styled.p`
   animation: 3s ease-out 0s 1 ${TitleTransition};
-  font-family: 'Poppins Regular';
+  font-family: "Poppins Regular";
   font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0.2rem;
@@ -71,7 +96,7 @@ export const ContactDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Poppins Medium';
+  font-family: "Poppins Medium";
   font-size: 12px;
   height: 150px;
 `;
