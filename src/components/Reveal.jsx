@@ -29,7 +29,7 @@ const Reveal = ({ children, width = "fit-content" }) => {
         animate={controls}
         transition={{ duration: 0.75, delay: 0.25 }}
       >
-        {children}
+        {isInView && children}
       </motion.div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MainDiv } from "./styles/general.style";
 import * as S from "./styles/Home.style";
 import { ReactComponent as Ellipse } from "./images/ellipse.svg";
@@ -54,7 +55,7 @@ const Home = () => {
           <S.AboutHeading>About me</S.AboutHeading>
           <TypeAnimation
             sequence={[
-              1500,
+              500,
               "I'm Faran Saeed, a Front-End Developer with over 2 years of hands-on experience in the industry. My journey into the world of programming began during the COVID-19 pandemic when I started learning Python through Coursera. Since then, I've been on an exciting path of self-discovery and growth.\nI hold a BSc in Economics from Lahore University of Management Sciences (LUMS), where I acquired valuable analytical and problem-solving skills that I now apply to my development work.\nMy passion for programming is what drives me. I find joy in crafting seamless and visually appealing web experiences. I'm proficient in a range of technologies, including React JS, JavaScript, CSS, HTML, Tailwind CSS, and Bootstrap. I also have a strong grasp of Git Version Control to ensure efficient collaboration on projects.",
               1000,
             ]}
