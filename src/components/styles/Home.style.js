@@ -22,10 +22,10 @@ export const AboutSection = styled.section`
   padding: 100px 80px;
   width: min(100vw, 1440px);
   max-width: 100%;
-  min-height: 800px;
 
   @media (max-width: 650px) {
-    padding: 80px 25px;
+    padding: 40px 25px;
+    padding-bottom: 60px;
   }
 `;
 
