@@ -1,15 +1,30 @@
-import { MainDiv, Section, Heading, Grid } from './styles/general.style';
-import Skill from './Skill';
+import { MainDiv, Section, Heading, Grid } from "./styles/general.style";
+import Skill from "./Skill";
 import {
   ReactLogo,
   Redux,
   Sass,
   Javascript,
   Css3 as CSS,
+  Tailwindcss,
   Python,
   Html5 as HTML,
+  Bootstrap,
   Firebase,
-} from '@styled-icons/simple-icons';
+} from "@styled-icons/simple-icons";
+
+const skills = [
+  { name: "React JS", logo: ReactLogo, postion: "left" },
+  { name: "JavaScript", logo: Javascript, postion: "center" },
+  { name: "Redux", logo: Redux, postion: "right" },
+  { name: "HTML", logo: HTML, postion: "left" },
+  { name: "CSS", logo: CSS, postion: "center" },
+  { name: "SASS", logo: Sass, postion: "right" },
+  { name: "Tailwind CSS", logo: Tailwindcss, postion: "left" },
+  { name: "Bootstrap", logo: Bootstrap, postion: "center" },
+  { name: "Python", logo: Python, postion: "right" },
+  { name: "Firebase", logo: Firebase, postion: "center" },
+];
 
 const Skills = () => {
   return (
@@ -17,14 +32,13 @@ const Skills = () => {
       <Section>
         <Heading>Skills & Expertise</Heading>
         <Grid>
-          <Skill name='ReactJS' Logo={ReactLogo} position='left' />
-          <Skill name='JavaScript' Logo={Javascript} position='center' />
-          <Skill name='Redux' Logo={Redux} position='right' />
-          <Skill name='CSS' Logo={CSS} position='left' />
-          <Skill name='SASS' Logo={Sass} position='center' />
-          <Skill name='HTML' Logo={HTML} position='right' />
-          <Skill name='Python' Logo={Python} position='left' />
-          <Skill name='Firebase' Logo={Firebase} position='center' />
+          {skills.map((skill) => (
+            <Skill
+              name={skill.name}
+              Logo={skill.logo}
+              position={skill.postion}
+            />
+          ))}
         </Grid>
       </Section>
     </MainDiv>

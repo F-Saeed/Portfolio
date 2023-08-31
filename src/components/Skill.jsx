@@ -1,4 +1,4 @@
-import StyledSkill from './styles/Skill.style';
+import StyledSkill from "./styles/Skill.style";
 
 const Skill = (props) => {
   const { name, Logo, position } = props;
