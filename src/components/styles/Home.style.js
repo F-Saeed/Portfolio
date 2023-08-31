@@ -23,7 +23,7 @@ export const AboutSection = styled.section`
   width: min(100vw, 1440px);
   max-width: 100%;
 
-  @media (max-width: 650px) {
+  @media (max-width: 550px) {
     padding: 40px 25px;
     padding-bottom: 60px;
   }
