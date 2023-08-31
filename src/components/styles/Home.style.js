@@ -132,7 +132,16 @@ export const PictureDiv = styled.div`
     width: 550px;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 570px) {
+  @media (max-width: 450px) {
+    margin-top: 0;
+
+    > svg {
+      height: 450px;
+      width: 90vw;
+    }
+  }
+
+  @media only screen and (min-width: 450px) and (max-width: 570px) {
     margin-top: 0;
 
     > svg {
