@@ -18,7 +18,7 @@ export const StyledProject = styled.figure`
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   height: 240px;
   text-align: center;
-  width: 384px;
+  width: min(90vw, 384px);
 
   img {
     border-radius: 1.2rem;
@@ -27,19 +27,18 @@ export const StyledProject = styled.figure`
     object-fit: cover;
     position: relative;
     left: 0;
+    width: min(90vw, 384px);
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 570px) {
+  @media (max-width: 570px) {
     height: calc(240px * (90vw / 384px));
-    width: 90vw;
 
     img {
       height: calc(240px * (90vw / 384px));
-      width: 90vw;
     }
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 1240px) {
+  @media (max-width: 1240px) {
     animation: 1.25s ease-out 0s 1 ${slideInFromCenter};
   }
 `;
@@ -65,7 +64,7 @@ export const ProjectCaption = styled.figcaption`
     padding: 35px 0 15px 0;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 1100px) {
+  @media (max-width: 900px) {
     background-color: rgb(52, 56, 58, 0.8);
     opacity: 1;
   }
@@ -90,15 +89,21 @@ export const ProjectLink = styled.a`
     transition: transform 0.3s linear, background-color 0.3s linear;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 570px) {
+  @media (max-width: 900px) {
+    background-color: rgb(116, 60, 189);
     margin: 0 70px 20px 70px;
+
+    &:hover {
+      transform: none;
+      transition: none;
+    }
   }
 `;
 
 // export const LeftProject = styled(Project, ProjectCaption)`
 //   animation: 1.25s ease-out 0s 1 ${slideInFromLeft};
 
-//   @media only screen and (min-width: 320px) and (max-width: 1240px) {
+//   @media (max-width: 1240px) {
 //     animation: 1.25s ease-out 0s 1 ${slideInFromCenter};
 //   }
 // `;
@@ -106,7 +111,7 @@ export const ProjectLink = styled.a`
 // export const CenterProject = styled(Project, ProjectCaption)`
 //   animation: 1.5s ease-out 0s 1 ${slideInFromCenter};
 
-//   @media only screen and (min-width: 320px) and (max-width: 1240px) {
+//   @media (max-width: 1240px) {
 //     animation: 1.25s ease-out 0s 1 ${slideInFromCenter};
 //   }
 // `;
@@ -114,7 +119,7 @@ export const ProjectLink = styled.a`
 // export const RightProject = styled(Project, ProjectCaption)`
 //   animation: 1.25s ease-out 0s 1 ${slideInFromRight};
 
-//   @media only screen and (min-width: 320px) and (max-width: 1240px) {
+//   @media (max-width: 1240px) {
 //     animation: 1.25s ease-out 0s 1 ${slideInFromCenter};
 //   }
 // `;
