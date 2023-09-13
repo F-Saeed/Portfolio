@@ -54,11 +54,11 @@ const Home = () => {
         <Reveal width="100%">
           <S.AboutHeading>About me</S.AboutHeading>
           <p className={styles.aboutContent}>
-            I'm Faran Saeed, a Front-End Developer with over 2 years of hands-on
-            experience in the industry. My journey into the world of programming
-            began during the COVID-19 pandemic when I started learning Python
-            through Coursera. Since then, I've been on an exciting path of
-            self-discovery and growth.
+            Hi! I'm Faran Saeed, a dedicated Front-End Developer with a passion
+            for creating captivating web experiences. My journey into the world
+            of programming began during the COVID-19 pandemic when I started
+            learning Python through Coursera. Since then, I've been on an
+            exciting path of self-discovery and growth.
           </p>
           <p className={styles.aboutContent}>
             I hold a BSc in Economics from Lahore University of Management
